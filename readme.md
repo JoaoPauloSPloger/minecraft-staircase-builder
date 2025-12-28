@@ -1,14 +1,9 @@
-# Gerador de Escadas "Multidirecional" (Minecraft Bedrock)
+# Gerador de Escadas "Multidirecional" (Minecraft Bedrock e Java)
 
 Este sistema avançado permite criar escadas em **8 direções diferentes** (4 Diagonais + 4 Retas), controlando a altura e o material.
-
-## 🛠️ Novidades desta Versão
-*   **8 Direções:** Escolha para onde a escada cresce (Norte, Sul, Leste, Oeste e suas diagonais).
-*   **Múltiplas Escadas:** Você pode invocar várias escadas ao mesmo tempo se elas tiverem tags diferentes (o sistema gerencia todas).
-
 ---
 
-## 📋 Instalação (Atualizada)
+## Instalação
 
 ### 1. Preparação
 Execute estes dois comandos no chat para criar os objetivos:
@@ -17,7 +12,7 @@ Execute estes dois comandos no chat para criar os objetivos:
 /scoreboard objectives add sc_stairs_dir dummy
 ```
 
-### 2. O Loop Principal (O "Cérebro")
+### 2. O Loop Principal 
 Você precisará de uma fileira com **11 Command Blocks** (1 Repetição + 10 Cadeia).
 *Todos devem ser "Always Active" (Sempre Ativo) e apontar uns para os outros.*
 
@@ -35,7 +30,7 @@ Você precisará de uma fileira com **11 Command Blocks** (1 Repetição + 10 Ca
 
 ---
 
-## 🚀 Como Usar e Escolher a Direção
+## Como Usar e Escolher a Direção
 
 Para gerar a escada, use a estrutura de gatilho (Impulso + 4 Cadeias) descrita abaixo. O segredo é mudar o número no **último comando**.
 
@@ -46,7 +41,7 @@ Para gerar a escada, use a estrutura de gatilho (Impulso + 4 Cadeias) descrita a
 4.  `/scoreboard players set @e[tag=stair_builder] sc_gen_stairs 20` (Define Altura)
 5.  `/scoreboard players set @e[tag=stair_builder] sc_stairs_dir 0` (**Define Direção**)
 
-### 🧭 Tabela de Direções (IDs)
+### Tabela de Direções (IDs)
 Mude o valor `0` no comando 5 para escolher a direção (baseado nas coordenadas padrão do Minecraft: Norte = -Z, Leste = +X).
 
 | ID | Direção | Eixos |
@@ -62,7 +57,7 @@ Mude o valor `0` no comando 5 para escolher a direção (baseado nas coordenadas
 
 ---
 
-## 💡 Dica: Como fazer escadas largas?
+## Dica: Como fazer escadas largas?
 O sistema gera uma linha de blocos. Para fazer uma escada larga (ex: 3 blocos de largura), você precisa invocar 3 construtores lado a lado.
 
 **Exemplo Manual:**
