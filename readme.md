@@ -14,7 +14,7 @@ Execute estes dois comandos no chat para criar os objetivos:
 
 ### 2. O Loop Principal 
 Você precisará de uma fileira com **11 Command Blocks** (1 Repetição + 10 Cadeia).
-*Todos devem ser "Always Active" (Sempre Ativo) e apontar uns para os outros.*
+*Todos em cadeia devem ser "Always Active" (Sempre Ativo), mantenha o command block de repetição em redstone. Todos command blocks devem apontar uns para os outros.*
 
 1.  **[Repetição]** `execute at @e[tag=stair_builder] run setblock ~ ~ ~ orange_concrete`
 2.  **[Cadeia]** `execute as @e[tag=stair_builder,scores={sc_stairs_dir=0}] at @s run tp @s ~1 ~1 ~1`
